@@ -1,5 +1,6 @@
 function finalA=laws(A, var)
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Law Texture Energy (LTE) function to extract texture features  from an image, 
 % through the convolution of 5x5 masks (each mask extracts a particular feature 
 % from the image). As a result of the convolution, 25 masks are obtained;
@@ -11,6 +12,7 @@ function finalA=laws(A, var)
 
 %inputs: A= image, var = number 1 --> 9 (masks)
 %outputs: finalA = law textured image
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % 5x5 masks defined
 L5=[ 1 4 6 4 1]; %(niveles)
