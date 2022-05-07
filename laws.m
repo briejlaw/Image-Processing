@@ -1,4 +1,4 @@
-function final=laws(A, var)
+function finalA=laws(A, var)
 
 %Law Texture Energy (LTE) function to extract texture features  from an image, 
 % through the convolution of 5x5 masks (each mask extracts a particular feature 
@@ -9,8 +9,8 @@ function final=laws(A, var)
 % edge content.
 
 
-%A = image
-%var = number 1 --> 9 (masks)
+%inputs: A= image, var = number 1 --> 9 (masks)
+%outputs: finalA = law textured image
 
 % 5x5 masks defined
 L5=[ 1 4 6 4 1]; %(niveles)
@@ -65,7 +65,7 @@ end
 %Conversion to double
 A_double=im2double(A);
 %imfilter function application
-final= imfilter(A_double,mask);
+finalA= imfilter(A_double,mask);
 
 
 
