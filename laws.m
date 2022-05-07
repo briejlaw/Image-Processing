@@ -59,7 +59,7 @@ switch var
     case 9 
         mask = (S5R5mask + R5S5mask)/2;
     otherwise
-        error('Opción incorrecta. Ingresa un número válido');
+        error('Enter a valid combination');
 end
 
 %Conversion to double
